@@ -14,6 +14,4 @@ RUN apt-get -q update >/dev/null \
   && apt-get autoremove --yes \
   && rm -rf /var/lib/{apt,dpkg,cache,log}/ 
 
-COPY start_ssh_server.sh /usr/bin/start_ssh_server.sh
-
 ENTRYPOINT ["/usr/bin/true"]
